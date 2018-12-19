@@ -1,0 +1,63 @@
+{
+  "name": "gradual-feature-toggle-tools",
+  "version": "0.0.1",
+  "description": "Provides a set of helper functions to make gradual, non-binary, feature toggle use easier",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lifeomic/gradual-feature-toggle-tools.git"
+  },
+  "author": "Matt Lavin <matt.lavin@lifeomic.com>",
+  "license": "MIT",
+  "main": "./work/dist/src/",
+  "module": "./work/dist/es6/src/",
+  "jsnext:main": "./work/dist/esnext/src/",
+  "types": "./work/dist/src/index.d.ts",
+  "scripts": {
+    "compile-src-cjs": "tsc --declaration --declarationDir ./work/dist -p tsconfig-src-cjs.json",
+    "compile-src-es6": "tsc -p tsconfig-src-es6.json",
+    "compile-src-esnext": "tsc -p tsconfig-src-esnext.json",
+    "precompile-src": "rm -rf ./work/dist",
+    "compile-src": "yarn compile-src-cjs && yarn compile-src-es6 && yarn compile-src-esnext",
+    "lint": "tslint --format codeFrame --project tsconfig.json 'src/**/*.ts' 'test/**/*.ts'",
+    "pretest": "yarn lint",
+    "test": "jest",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "prebuild": "yarn test",
+    "build": "yarn compile-src"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/lodash": "^4.14.119",
+    "@types/node": "^10.0.7",
+    "@types/randomstring": "^1.1.6",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-istanbul": "^4.1.5",
+    "chi-squared-test": "^1.1.0",
+    "coveralls": "^3.0.0",
+    "inquirer": "^6.0.0",
+    "jest": "^23.6.0",
+    "nyc": "^12.0.1",
+    "randomstring": "^1.1.5",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.0",
+    "tslint-config-semistandard": "^7.0.0",
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "crypto-hash": "^1.0.0",
+    "string-hash": "^1.1.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "collectCoverage": true,
+    "testPathIgnorePatterns": ["/node_modules/", "/work/"],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  }
+}
