@@ -1,5 +1,5 @@
 {
-  "name": "gradual-feature-toggle-tools",
+  "name": "@lifeomic/gradual-feature-toggle-tools",
   "version": "0.0.1",
   "description": "Provides a set of helper functions to make gradual, non-binary, feature toggle use easier",
   "repository": {
@@ -21,7 +21,6 @@
     "lint": "tslint --format codeFrame --project tsconfig.json 'src/**/*.ts' 'test/**/*.ts'",
     "pretest": "yarn lint",
     "test": "jest",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "prebuild": "yarn test",
     "build": "yarn compile-src"
   },
@@ -30,13 +29,8 @@
     "@types/lodash": "^4.14.119",
     "@types/node": "^10.0.7",
     "@types/randomstring": "^1.1.6",
-    "babel-cli": "^6.26.0",
-    "babel-plugin-istanbul": "^4.1.5",
     "chi-squared-test": "^1.1.0",
-    "coveralls": "^3.0.0",
-    "inquirer": "^6.0.0",
     "jest": "^23.6.0",
-    "nyc": "^12.0.1",
     "randomstring": "^1.1.5",
     "ts-jest": "^23.10.5",
     "tslint": "^5.12.0",
