@@ -1,6 +1,10 @@
 gradual-feature-toggle-tools
 ============================
 
+[![npm](https://img.shields.io/npm/v/@lifeomic/gradual-feature-toggle-tools.svg)](https://www.npmjs.com/package/@lifeomic/gradual-feature-toggle-tools)
+[![Build Status](https://travis-ci.org/lifeomic/gradual-feature-toggle-tools.svg?branch=master)](https://travis-ci.org/lifeomic/gradual-feature-toggle-tools)
+[![Greenkeeper badge](https://badges.greenkeeper.io/lifeomic/gradual-feature-toggle-tools.svg)](https://greenkeeper.io/)
+
 A set of tools to make gradual rollout of features easier
 
 Selecting users to get a feature
@@ -17,7 +21,7 @@ distribution is true.
 Given a feature an a user, this code can help you decide whether a user should
 receive the new behavior or not:
 
-```
+```js
 import { calculateUserEnablementThreshold } from 'gradual-feature-toggle-tools';
 
 const featureValue = // some lookup of a feature's current value (from 0 - 100)
