@@ -1,6 +1,6 @@
 {
   "name": "@lifeomic/gradual-feature-toggle-tools",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Provides a set of helper functions to make gradual, non-binary, feature toggle use easier",
   "repository": {
     "type": "git",
@@ -44,7 +44,10 @@
   "jest": {
     "preset": "ts-jest",
     "collectCoverage": true,
-    "testPathIgnorePatterns": ["/node_modules/", "/work/"],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/work/"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 100,
