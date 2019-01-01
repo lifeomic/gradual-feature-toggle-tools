@@ -35,7 +35,7 @@
     "ts-jest": "^23.10.5",
     "tslint": "^5.12.0",
     "tslint-config-semistandard": "^7.0.0",
-    "typescript": "^2.7.2"
+    "typescript": "^3.2.2"
   },
   "dependencies": {
     "crypto-hash": "^1.0.0",
