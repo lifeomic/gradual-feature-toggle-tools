@@ -27,7 +27,7 @@
   "devDependencies": {
     "@types/jest": "^23.3.10",
     "@types/lodash": "^4.14.119",
-    "@types/node": "^10.0.7",
+    "@types/node": "^11.9.5",
     "@types/randomstring": "^1.1.6",
     "chi-squared-test": "^1.1.0",
     "jest": "^23.6.0",
