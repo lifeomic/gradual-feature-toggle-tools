@@ -5,7 +5,7 @@ gradual-feature-toggle-tools
 [![Build Status](https://travis-ci.org/lifeomic/gradual-feature-toggle-tools.svg?branch=master)](https://travis-ci.org/lifeomic/gradual-feature-toggle-tools)
 [![Greenkeeper badge](https://badges.greenkeeper.io/lifeomic/gradual-feature-toggle-tools.svg)](https://greenkeeper.io/)
 
-A set of tools to make gradual rollout of features easier
+A set of tools to make gradual rollout of features easier. For a real world story of how this can be used, checkout https://medium.com/lifeomic/changing-production-databases-with-confidence-and-without-downtime-c5f5d60061d7
 
 Selecting users to get a feature
 --------------------------------
