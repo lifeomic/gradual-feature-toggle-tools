@@ -1,5 +1,4 @@
-gradual-feature-toggle-tools
-============================
+# gradual-feature-toggle-tools
 
 [![npm](https://img.shields.io/npm/v/@lifeomic/gradual-feature-toggle-tools.svg)](https://www.npmjs.com/package/@lifeomic/gradual-feature-toggle-tools)
 [![Build Status](https://travis-ci.org/lifeomic/gradual-feature-toggle-tools.svg?branch=master)](https://travis-ci.org/lifeomic/gradual-feature-toggle-tools)
@@ -7,8 +6,7 @@ gradual-feature-toggle-tools
 
 A set of tools to make gradual rollout of features easier. For a real world story of how this can be used, checkout https://medium.com/lifeomic/changing-production-databases-with-confidence-and-without-downtime-c5f5d60061d7
 
-Selecting users to get a feature
---------------------------------
+## Selecting users to get a feature
 
 When a new feature is being rolled out and is currently 50% enabled, then
 ideally 50% of the users would get the new behavior. The enablement of the new
